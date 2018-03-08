@@ -1,0 +1,97 @@
+$font-bold: 700;
+
+/* In type partial */
+@font-face {
+    font-family: 'LibreBaskervilleItalic';
+    src: url('../fonts/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskervilleRegular';
+    src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LibreBaskervilleBold';
+    src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
+    font-weight: $font-bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AbrilFatface";
+    src: url("../fonts/AbrilFatface-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+$bgwhile: #fff;
+$color: #7C634F;
+$ft24: 24px;
+$abrilFatface: "AbrilFatface";
+$MontserratLight: "Montserrat-Light";
+$color14: #433b31;
+body,
+button, input, optgroup, select, textarea,
+.carousel-caption{
+    color: $color14;
+    font-family: $MontserratLight;
+    font-size: 14px;
+}
+.ftabril{
+    font-family: $abrilFatface;
+}
+@media (min-width: 1300px) {
+    .container {
+        width: 1268px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1500px) {
+    
+}
+header{
+    padding-bottom: 30px;
+    .navbar{
+        background: none;
+        display: inline-block;
+        padding-left: 100px;
+        .navbar-toggler{
+            border: none;
+        }
+        #navbarCollapse{
+            position: absolute;
+            z-index: 999;
+            background: $bgwhile;
+            width: 100%;
+            min-width: 200px;
+        }
+    }
+    .dr-language{
+        display: inline-block;
+        #dropdownMenuButton{
+            font-size: $ft24;
+            font-family: $abrilFatface;
+        }
+        .dropdown-toggle{
+            border: none;
+            &:after{
+                display: none;
+            }
+            &:hover{
+                background: none;
+            }
+        }
+        .dropdown-menu{
+            border: none;
+        }
+    }
+    .logo{
+        display: inline-block;
+        width: calc(100% - 230px);
+    }
+}

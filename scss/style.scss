@@ -1,0 +1,98 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+} 
+body {	
+ 	font-size:15px;  
+	font-family: 'segoeui';
+}
+p {
+	 
+}
+body,form,ul{
+	margin:0;
+	padding:0;
+ 	
+ }
+html, body {
+	height:100%;	
+} 
+
+article, footer {
+	display: block;
+}
+a{
+	text-decoration:none;
+    outline:none;
+}
+a:hover{
+ 
+}
+ 
+img{
+	border:none;
+	max-width: 100%;
+}
+input, textarea, select, button{
+	border-radius:0;
+    outline:none;
+}
+.clear {
+	clear:both;
+} 
+a:hover, a:focus {
+	text-decoration:none;
+}
+:hover {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper {
+    margin: 0 auto -220px;
+    min-height: 100%;
+}
+#footer, .push {
+    min-height: 220px;
+}
+
+/*******************all-file-scss-page***********************/ 
+
+@import "all-file-scss-page/header";
+@import "all-file-scss-page/content";
+@import "all-file-scss-page/footer";
+@import "all-file-scss-page/responsive"; 
+/******************************************/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

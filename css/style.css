@@ -1,0 +1,202 @@
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+html[xmlns] .clearfix {
+  display: block; }
+
+* html .clearfix {
+  height: 1%; }
+
+body {
+  font-size: 15px;
+  font-family: 'segoeui'; }
+
+body, form, ul {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+article, footer {
+  display: block; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+img {
+  border: none;
+  max-width: 100%; }
+
+input, textarea, select, button {
+  border-radius: 0;
+  outline: none; }
+
+.clear {
+  clear: both; }
+
+a:hover, a:focus {
+  text-decoration: none; }
+
+:hover {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#wrapper {
+  margin: 0 auto -220px;
+  min-height: 100%; }
+
+#footer, .push {
+  min-height: 220px; }
+
+/*******************all-file-scss-page***********************/
+/* In type partial */
+@font-face {
+  font-family: 'LibreBaskervilleItalic';
+  src: url("../fonts/LibreBaskerville-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LibreBaskervilleRegular';
+  src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'LibreBaskervilleBold';
+  src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "AbrilFatface";
+  src: url("../fonts/AbrilFatface-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype"); }
+body,
+button, input, optgroup, select, textarea,
+.carousel-caption {
+  color: #433b31;
+  font-family: "Montserrat-Light";
+  font-size: 14px; }
+
+.ftabril {
+  font-family: "AbrilFatface"; }
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1268px;
+    max-width: 100%; } }
+header {
+  padding-bottom: 30px; }
+  header .navbar {
+    background: none;
+    display: inline-block;
+    padding-left: 100px; }
+    header .navbar .navbar-toggler {
+      border: none; }
+    header .navbar #navbarCollapse {
+      position: absolute;
+      z-index: 999;
+      background: #fff;
+      width: 100%;
+      min-width: 200px; }
+  header .dr-language {
+    display: inline-block; }
+    header .dr-language #dropdownMenuButton {
+      font-size: 24px;
+      font-family: "AbrilFatface"; }
+    header .dr-language .dropdown-toggle {
+      border: none; }
+      header .dr-language .dropdown-toggle:after {
+        display: none; }
+      header .dr-language .dropdown-toggle:hover {
+        background: none; }
+    header .dr-language .dropdown-menu {
+      border: none; }
+  header .logo {
+    display: inline-block;
+    width: calc(100% - 230px); }
+
+/*strat carousel*/
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block; }
+
+#about {
+  position: relative; }
+  #about:after {
+    background: rgba(0, 0, 0, 0) url("../images/bg1.png") repeat-x scroll 0 100px;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+/*section-content*/
+.section-content .box-elem {
+  background: #281f13 none repeat scroll 0 0;
+  border-radius: 0 0 0 30px;
+  color: #7a634e;
+  height: 100%;
+  padding: 60px 40px; }
+
+/*element-full*/
+.element-full .box-element {
+  overflow: hidden;
+  padding: 0; }
+  .element-full .box-element .box-hover {
+    height: 100%;
+    padding: 14% 0;
+    position: absolute;
+    top: -100%;
+    -webkit-transition: all 1500ms;
+    transition: all 1500ms;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    background: url("../images/opacity.png") no-repeat;
+    background-size: cover; }
+  .element-full .box-element:hover .box-hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    top: 0; }
+
+.hd-title {
+  background: rgba(0, 0, 0, 0) url("../images/bg1.png") repeat-x scroll 0 0; }
+
+/*start news*/
+#news {
+  padding-top: 80px; }
+  #news .inner {
+    background: #efe8e4 none repeat scroll 0 0;
+    border-radius: 20px;
+    padding-top: 180px;
+    position: relative; }
+    #news .inner .bg-news {
+      color: #fff;
+      font-family: "AbrilFatface";
+      font-size: 355px;
+      line-height: 224px;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      top: 0;
+      vertical-align: top;
+      width: 100%; }
+
+/******************************************/
+
+/*# sourceMappingURL=style.css.map */
