@@ -3,31 +3,31 @@ $font-bold: 700;
 /* In type partial */
 @font-face {
     font-family: 'LibreBaskervilleItalic';
-    src: url('../fonts/LibreBaskerville-Italic.ttf') format('truetype');
+    src: url('../font/LibreBaskerville-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'LibreBaskervilleRegular';
-    src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    src: url('../font/LibreBaskerville-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'LibreBaskervilleBold';
-    src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
+    src: url('../font/LibreBaskerville-Bold.ttf') format('truetype');
     font-weight: $font-bold;
     font-style: normal;
 }
 @font-face {
     font-family: "AbrilFatface";
-    src: url("../fonts/AbrilFatface-Regular.otf") format("opentype");
+    src: url("../font/AbrilFatface-Regular.otf") format("opentype");
 }
 @font-face {
     font-family: "Montserrat-Light";
-    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+    src: url("../font/Montserrat-Light.ttf") format("truetype");
 }
 $bgwhile: #fff;
 $color: #7C634F;
@@ -46,13 +46,23 @@ button, input, optgroup, select, textarea,
     font-family: $abrilFatface;
 }
 .ft48{
-   font-size: 48px; 
+    font-size: 48px; 
 }
 h1,h2,h3,h4,h5,h6{
     /*color: #281f13;*/
 }
 a{
     color: #281f13;
+}
+a:hover{
+    opacity: 0.7;
+}
+.abox:hover{
+    color: #fff;
+    opacity: 0.8;
+}
+.marbt20{
+    margin-bottom: 20px;
 }
 @media (min-width: 1300px) {
     .container {
@@ -61,7 +71,7 @@ a{
     }
 }
 @media (min-width: 1500px) {
-    
+
 }
 .abox{
     background: #7a634e none repeat scroll 0 0;
@@ -69,11 +79,12 @@ a{
     display: inline-block;
     font-family: "AbrilFatface";
     font-size: 20px;
-    max-width: 98px;
+    max-width: 85px;
     padding: 15px 15px 15px 10px;
 }
 header{
     padding-bottom: 30px;
+    padding-top: 20px;
     .navbar{
         background: none;
         display: inline-block;
@@ -87,14 +98,24 @@ header{
             background: $bgwhile;
             width: 100%;
             min-width: 200px;
+            padding: 15px;
+            a{
+                color: #281f13;
+            }
         }
     }
     .dr-language{
         display: inline-block;
         #dropdownMenuButton{
-            font-size: $ft24;
-            font-family: $abrilFatface;
             color: #968575;
+            font-family: $abrilFatface;
+            font-size: $ft24;
+            padding: 0 0 0 20px;
+            vertical-align: bottom;
+            span{
+                border-bottom: 1px solid #968575;
+                padding: 0 5px;
+            }
         }
         .dropdown-toggle{
             border: none;
@@ -111,6 +132,6 @@ header{
     }
     .logo{
         display: inline-block;
-        width: calc(100% - 230px);
+        width: calc(100% - 300px);
     }
 }

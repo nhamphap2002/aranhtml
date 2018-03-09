@@ -1,3 +1,11 @@
+/*global*/
+.hidden-sm,
+.hidden-md{
+    display: none;
+}
+.marbt30{
+    margin-bottom: 30px;
+}
 /*strat carousel*/
 .carousel-item.active,
 .carousel-item-next,
@@ -17,14 +25,31 @@
         background-color: #281f13;
     }
 }
+.carousel-item{
+    img {
+        border-radius: 30px 30px 0 0;
+    }
+}
+.carousel-indicators{
+    bottom: 20px;
+    left: auto;
+    margin: 0;
+    right: 0;
+    width: 300px;
+}
 .carousel-caption{
     left: 60px;
+    bottom: -20px;
     h3{
-        font-size: 72px;
         color: #281f13;
+        font-size: 72px;
+        margin-bottom: 25px;
     }
     .abox{
-        padding: 15px;
+        padding: 13px;
+    }
+    p{
+        margin-bottom: 25px;
     }
 }
 #about{
@@ -41,6 +66,7 @@
         z-index: -1;
     }
     .ftabril{
+        color: #281e14;
         font-size: 72px;
         padding-bottom: 40px;
         padding-top: 100px;
@@ -86,6 +112,10 @@
         a.text-center{
             display: block;
         }
+        > p{
+            margin-bottom: 30px;
+            color: #CBC1BF
+        }
     }
 }
 
@@ -96,9 +126,10 @@
         padding: 0;
         .box-hover {
             height: 100%;
+            width: 100%;
             padding: 14% 0;
             position: absolute;
-            top: -100%;
+            top: -200%;
             -webkit-transition: all 1000ms;
             transition: all 1000ms;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -145,22 +176,29 @@
     .inner{
         background: #efe8e4 none repeat scroll 0 0;
         border-radius: 20px 20px 0 0;
-        padding-top: 180px;
+        /*padding-top: 180px;*/
         position: relative;
         .bg-news{
-            color: #fff;
+            background: rgba(0, 0, 0, 0) url("../images/bg-news.png") no-repeat scroll center -10px;
+            background-size: contain;
+            color: #d4d2d0;
+            display: block;
             font-family: "AbrilFatface";
-            font-size: 355px;
-            line-height: 224px;
-            position: absolute;
+            font-size: 286px;
+            height: 212px;
+            line-height: 0;
             text-align: center;
-            text-transform: uppercase;
-            top: -8px;
-            vertical-align: top;
-            width: 100%;
+            text-indent: -10000px;
+        }
+        .justify-content-center{
+            margin-top: -75px;
         }
         .box-news{
             padding: 30px 20px 0;
+            background: #E8DBD3;
+            p{
+                margin-bottom: 30px;
+            }
         }
         h3.ftabril{
             /*font-size: 24px;*/
@@ -169,12 +207,14 @@
         .box-link{
             a{
                 background: #7a634e none repeat scroll 0 0;
-                color: #fff;
+                color: #F0E9E3;
                 display: inline-block;
                 font-size: 20px;
-                max-width: 98px;
-                /*padding: 20px;*/
+                max-width: 80px;
+                /* padding: 20px; */
                 font-family: "AbrilFatface";
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
         .owl-prev,
@@ -196,6 +236,13 @@
         }
         .box-news-bt{
             padding: 20px 0 30px;
+            h1{
+                color: #281E14;
+            }
+            a{
+                padding-top: 10px;
+                display: inline-block;
+            }
         }
     } 
 }
@@ -204,44 +251,57 @@
 .social-content{
     background: rgba(0, 0, 0, 0) url("../images/bg1.png") repeat scroll 0 0;
     margin-top: 11%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     .bg-social{
+        background: rgba(0, 0, 0, 0) url("../images/bg-social.png") no-repeat scroll 0 0;
+        background-size: contain;
         color: #d4d2d0;
         display: block;
         font-family: "AbrilFatface";
         font-size: 286px;
+        height: 212px;
         line-height: 0;
-        padding-bottom: 53px;
         text-align: center;
+        text-indent: -10000px;
     }
-    .col-md-6{
-        margin-top: 25px;
-        .box-social{
-            background: #efe8e4;
-            padding: 10px 50px 15px;
-            h5{
-                font-family: "AbrilFatface";
-                font-size: 18px;
-                color: #5e554b;
-                a{
+    .inner{
+        margin-top: -70px;
+        .col-md-6{
+            margin-top: 25px;
+            .box-social{
+                background: #efe8e4;
+                padding: 10px 50px 15px;
+                h5{
                     font-family: "AbrilFatface";
                     font-size: 18px;
-                    color: #5e554b;    
-                    img{
-                        padding-right: 10px;
+                    color: #5e554b;
+                    a{
+                        font-family: "AbrilFatface";
+                        font-size: 18px;
+                        color: #2E241A;    
+                        img{
+                            padding-right: 10px;
+                        }
                     }
+                }
+                p{
+                    color: #716A64;
+                }
+            }
+            .box-social-ft{
+                background: #2e2418;
+                font-size: 18px;
+                color: #fff;
+                padding: 10px 30px;
+                .box-date{
+                    padding: 0 10px;
+                    vertical-align: middle;
+                    color: #BBB2A9;
                 }
             }
         }
-        .box-social-ft{
-            background: #2e2418;
-            font-size: 18px;
-            color: #fff;
-            padding: 10px 30px;
-            .box-date{
-                padding: 0 10px;
-                vertical-align: middle;
-            }
-        }
     }
+}
+.scale{
+    transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
 }
