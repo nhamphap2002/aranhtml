@@ -45,6 +45,15 @@ button, input, optgroup, select, textarea,
 .ftabril{
     font-family: $abrilFatface;
 }
+.ft48{
+   font-size: 48px; 
+}
+h1,h2,h3,h4,h5,h6{
+    /*color: #281f13;*/
+}
+a{
+    color: #281f13;
+}
 @media (min-width: 1300px) {
     .container {
         width: 1268px;
@@ -53,6 +62,15 @@ button, input, optgroup, select, textarea,
 }
 @media (min-width: 1500px) {
     
+}
+.abox{
+    background: #7a634e none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-family: "AbrilFatface";
+    font-size: 20px;
+    max-width: 98px;
+    padding: 15px 15px 15px 10px;
 }
 header{
     padding-bottom: 30px;
@@ -76,6 +94,7 @@ header{
         #dropdownMenuButton{
             font-size: $ft24;
             font-family: $abrilFatface;
+            color: #968575;
         }
         .dropdown-toggle{
             border: none;

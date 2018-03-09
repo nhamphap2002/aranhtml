@@ -4,25 +4,89 @@
 .carousel-item-prev{
     display: block;
 }
+.carousel-indicators
+{
+    li {
+        background-color: #898580;
+        border-radius: 50%;
+        height: 8px;
+        max-width: 8px;
+
+    }
+    .active{
+        background-color: #281f13;
+    }
+}
+.carousel-caption{
+    left: 60px;
+    h3{
+        font-size: 72px;
+        color: #281f13;
+    }
+    .abox{
+        padding: 15px;
+    }
+}
 #about{
+    padding-bottom: 150px;
     position: relative;
     &:after{
-        background: rgba(0, 0, 0, 0) url("../images/bg1.png") repeat-x scroll 0 100px;
+        background: rgba(0, 0, 0, 0) url("../images/bg1.png") repeat-x scroll 0 230px;
         content: "";
         height: 100%;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: -1;
+    }
+    .ftabril{
+        font-size: 72px;
+        padding-bottom: 40px;
+        padding-top: 100px;
     }
 }
 /*section-content*/
-.section-content .box-elem{
-    background: #281f13 none repeat scroll 0 0;
-    border-radius: 0 0 0 30px;
-    color: #7a634e;
-    height: 100%;
-    padding: 60px 40px;
+.section-content {
+    .hd-title{
+        background: rgba(0, 0, 0, 0) url("../images/bg1.png") repeat-x scroll 0 0;
+        margin-bottom: 80px;
+        margin-top: 15px;
+        padding: 60px 0 75px;
+        h3{
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+    }
+    .box-elem{
+        background: #281f13 none repeat scroll 0 0;
+        border-radius: 0 0 0 30px;
+        color: #7a634e;
+        height: 100%;
+        padding: 60px 40px;
+
+        div.text-center{
+            position: relative;
+            height: 85px;
+            margin: 30px 0;
+            img{
+                max-height: 100%;
+                max-width: 100%;
+                width: auto;
+                height: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+        }
+        a.text-center{
+            display: block;
+        }
+    }
 }
 
 /*element-full*/
@@ -35,12 +99,19 @@
             padding: 14% 0;
             position: absolute;
             top: -100%;
-            -webkit-transition: all 1500ms;
-            transition: all 1500ms;
+            -webkit-transition: all 1000ms;
+            transition: all 1000ms;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
             filter: alpha(opacity=0);
             background: url('../images/opacity.png') no-repeat;
             background-size: cover;
+            text-align: center;
+            .box-hover-ct{
+                padding: 15px 0 25px;
+            }
+            h3{
+                font-size: 48px;
+            }
         }
         &:hover{
             .box-hover {
@@ -49,19 +120,31 @@
                 opacity: 1;
                 top: 0;
             }
+            .box-bottom{
+                bottom: -100px;
+            }
+        }
+        .box-bottom{
+            bottom: 30px;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            -webkit-transition: all 10ms;
+            transition: all 10ms;
+            h3{
+                font-size: 30px;
+            }
         }
     }
 
 }
-.hd-title{
-    background: rgba(0, 0, 0, 0) url("../images/bg1.png") repeat-x scroll 0 0;
-}
 /*start news*/
 #news{
-    padding-top: 80px;
+    padding-top: 100px;
     .inner{
         background: #efe8e4 none repeat scroll 0 0;
-        border-radius: 20px;
+        border-radius: 20px 20px 0 0;
         padding-top: 180px;
         position: relative;
         .bg-news{
@@ -72,9 +155,93 @@
             position: absolute;
             text-align: center;
             text-transform: uppercase;
-            top: 0;
+            top: -8px;
             vertical-align: top;
             width: 100%;
         }
+        .box-news{
+            padding: 30px 20px 0;
+        }
+        h3.ftabril{
+            /*font-size: 24px;*/
+            margin-bottom: 10px;
+        }
+        .box-link{
+            a{
+                background: #7a634e none repeat scroll 0 0;
+                color: #fff;
+                display: inline-block;
+                font-size: 20px;
+                max-width: 98px;
+                /*padding: 20px;*/
+                font-family: "AbrilFatface";
+            }
+        }
+        .owl-prev,
+        .owl-next{
+            position: absolute;
+            top: 37.5%;
+            width: 70px;
+        }
+        .owl-prev{
+            background: rgba(0, 0, 0, 0) url("../images/arrow-left.png") no-repeat scroll center center;
+            left: -100px;            
+        }
+        .owl-next{
+            background: rgba(0, 0, 0, 0) url("../images/arrow-right.png") no-repeat scroll center center;
+            right: -100px;
+        }
+        .owl-dots{
+            display: none;
+        }
+        .box-news-bt{
+            padding: 20px 0 30px;
+        }
     } 
+}
+
+/*social-content*/
+.social-content{
+    background: rgba(0, 0, 0, 0) url("../images/bg1.png") repeat scroll 0 0;
+    margin-top: 11%;
+    margin-bottom: 50px;
+    .bg-social{
+        color: #d4d2d0;
+        display: block;
+        font-family: "AbrilFatface";
+        font-size: 286px;
+        line-height: 0;
+        padding-bottom: 53px;
+        text-align: center;
+    }
+    .col-md-6{
+        margin-top: 25px;
+        .box-social{
+            background: #efe8e4;
+            padding: 10px 50px 15px;
+            h5{
+                font-family: "AbrilFatface";
+                font-size: 18px;
+                color: #5e554b;
+                a{
+                    font-family: "AbrilFatface";
+                    font-size: 18px;
+                    color: #5e554b;    
+                    img{
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        .box-social-ft{
+            background: #2e2418;
+            font-size: 18px;
+            color: #fff;
+            padding: 10px 30px;
+            .box-date{
+                padding: 0 10px;
+                vertical-align: middle;
+            }
+        }
+    }
 }

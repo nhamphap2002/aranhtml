@@ -13,15 +13,17 @@ jQuery(document).ready(function ($) {
             loop: true,
             margin: 28,
             nav: true,
+            navText: [ '&nbsp;', '&nbsp;' ],
+            ots: false,
             responsive: {
                 0: {
                     items: 1
                 },
                 480: {
-                    items: 2
+                    items: 1
                 },
                 768: {
-                    items: 2
+                    items: 1
                 },
                 1024: {
                     items: 2

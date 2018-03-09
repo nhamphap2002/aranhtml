@@ -1,0 +1,93 @@
+
+/*
+ * Created on : Mar 8, 2018, 10:02:38 AM
+ * Author: Tran Trong Thang
+ * Email: trantrongthang1207@gmail.com
+ * Skype: trantrongthang1207
+ */
+.social{
+    margin-bottom: 25px;
+}
+.social-title{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.social i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-right: 10px;
+    padding: 10px 16px
+}
+.social i.fa-instagram{
+    padding: 10px 12px;
+}
+.social i.fa-youtube{
+    padding: 10px 9px;
+}
+.social i.fa-twitter{
+    padding: 10px 11px;
+}
+.social i.fa-tripadvisor{
+    padding: 10px 10px;
+}
+.footer-contact{
+
+}
+#footer #contactForm{
+    width: 100%;
+}
+.field-label{
+    background: #fff none repeat scroll 0 0;
+    color: #0a2441;
+    display: inline-block;
+    font-size: 18px;
+    min-width: 90px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: bottom;
+}
+#footer #contactForm .fieldset .form-list li .field {
+    display: inline-block;
+    float: none;
+    width: calc(100% - 94px);
+}
+.footer-contact .input-text {
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+.footer-contact .form-list .field{
+    margin-bottom: 0;
+}
+.footer-contact .button{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #0a2441;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.copyright{
+    text-align: center;
+}
+.copyright .menu{
+    padding-top: 15px;
+}
+.copyright .menu li{
+    border-right: 2px solid #67696a;
+    display: inline-block;
+    padding: 0 10px;
+}
+.copyright .menu li:last-child{
+    border: none;
+}
+.footer-3 .module-title{
+    text-transform: none;
+}
+.footer-3 .module-title:after{
+    display: none;
+}
+#footer a,
+.footer-3{
+    text-transform: capitalize;
+}
