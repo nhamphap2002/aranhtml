@@ -19,6 +19,38 @@
         }
     }
 }
+@media (max-width: 1000px) and (min-width: 768px) {
+
+}
+@media (max-width: 1000px) and (min-width: 768px) {
+    #tvdesign-carousel{
+        h2{
+        }
+        .news-carousel{
+            .item{
+                .box-design-ct{
+                    padding-top: 10%;
+                    h4{
+                    }
+                }
+                img{
+                }
+            }
+            .owl-prev,
+            .owl-next{
+            }
+            .owl-prev{ 
+
+            }
+            .owl-next{
+
+            }
+            .owl-dots{
+                top: 75%;
+            }
+        }
+    }
+}
 @media (min-width: 992px) {
     .element-full{
         .box-element{
@@ -33,6 +65,7 @@
             }
         }
     }
+
 }
 @media (min-width: 1200px) {
     .col-xl-7{
@@ -52,6 +85,58 @@
                 .box-hover-ct {
                     padding: 15px 0 25px;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) and (min-width: 768px) {
+    #article-design{
+        .inner{
+            .bgfull{
+                .box-article{
+                    padding-top: 22%;
+                    .aboxs{
+                        max-width: 100%
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1300px) and (min-width: 1200px) {
+    #article-design{
+        .inner{
+            .bgfull{
+                .box-article{
+                    padding-top: 22%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1300px) and (min-width: 1000px) {
+    #tvdesign-carousel{
+        h2{
+        }
+        .news-carousel{
+            .item{
+                .box-design-ct{
+                    padding-top: 45%;
+                    h4{
+                    }
+                }
+                img{
+                }
+            }
+            .owl-prev,
+            .owl-next{
+            }
+            .owl-prev{          
+            }
+            .owl-next{
+            }
+            .owl-dots{
+                top: 75%;
             }
         }
     }
@@ -100,6 +185,20 @@
         }
     }
 }
+@media (max-width: 1550px) and (min-width: 1400px) {
+    .slider-ante{
+        .inner{
+            /*padding-top: 70px;*/
+        }
+    }
+}
+@media (max-width: 1700px) and (min-width: 1550px) {
+    .slider-ante{
+        .inner{
+            /*padding-top: 100px;*/
+        }
+    }
+}
 @media (max-width: 1550px) {
 
 }
@@ -140,8 +239,48 @@
             }
         }
     }
+    #article-design{
+        .inner{
+            .bgfull{
+                background: none;
+                max-width: calc(100%);
+                position: relative;
+                &:after{
+                    background: #F0E8E5;
+                    content: '';
+                    position: absolute;
+                    left: 15px;
+                    top: 0;
+                    height: 100%;
+                    width: calc(100% - 30px);
+                }
+                .box-article{
+                    padding-top: 35px;
+                    padding-right: 0;
+                    padding-bottom: 30%;
+                }
+            }
+            .pdr0 {
+                padding-right: 15px !important;
+            }
+            .pdl0 {
+                padding-left: 15px !important;
+            }
+        }
+    }
 }
-
+@media (max-width: 900px) {
+    .slider-potrebbe{
+        .owl-theme{
+            .owl-prev{ 
+                left: -50px;
+            }
+            .owl-next{
+                right: -50px;
+            }
+        }
+    }
+}
 @media (max-width: 768px) {
     .hidden-md{
         display: block;
@@ -171,8 +310,100 @@
     .box-footer .col-md-6.col-lg-2.text-right{
         text-align: left !important;
     }
-}
 
+    #tvdesign-carousel{
+        h2{
+            font-size: 36px;
+        }
+        .news-carousel{
+            .item{
+                .box-design-ct{
+                    padding-top: 0;
+                    padding-bottom: 30px;
+                    h4{
+
+                    }
+                }
+                img{
+                }
+            }
+            .owl-prev,
+            .owl-next{
+            }
+            .owl-prev{ 
+                left: -50px;
+            }
+            .owl-next{
+                right: -50px;
+            }
+            .owl-dots{
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: auto;
+            }
+        }
+    }
+    .slider-massima{ 
+        .container{
+            h1{
+                font-size: 36px;
+            }
+        }
+    }
+    .slider-ante{
+        .inner{
+            .justify-content-center{
+                .owl-prev{
+                    left: 20px;
+                }
+                .owl-next{
+                    right: 20px;
+                }
+            }
+        }
+    }
+    .tab-content{
+        .col-12 {
+            .col-12 {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .slider-potrebbe{
+        h2{
+            font-size: 36px;
+        }
+    }
+    #article-design{
+        .inner{
+            &:after{
+                height: 90%;
+                top: 5%;
+            }
+            .bgfull{
+                .box-article{
+                    padding-bottom: 22%;
+                    .aboxs{
+                        max-width: 100%
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .slider-potrebbe{
+        .owl-theme{
+            .owl-prev{ 
+                left: 0;
+            }
+            .owl-next{
+                right: 0;
+            }
+        }
+    }
+}
 @media (max-width: 576px) {
     .hidden-sm{
         display: block;
@@ -228,6 +459,36 @@
         .box-element{
             .box-hover{
                 top: 0;
+            }
+            .box-bottom{
+                display: none;
+            }
+        }
+    }
+
+    #tvdesign-carousel{
+        h2{
+        }
+        .news-carousel{
+            .item{
+                .box-design-ct{
+                    h4{
+
+                    }
+                }
+                img{
+                }
+            }
+            .owl-prev,
+            .owl-next{
+            }
+            .owl-prev{ 
+                left: 0;
+            }
+            .owl-next{
+                right: 0;
+            }
+            .owl-dots{
             }
         }
     }
