@@ -78,7 +78,53 @@ a:hover, a:focus {
 @import "all-file-scss-page/responsive"; 
 /******************************************/ 
 
+.wrapper
+{
+    max-width:1920px;
+    margin:0 auto;
+}
 
+.bg-social
+{
+    max-width: 1430px;
+    margin: auto;	
+}
+
+header
+{
+    .logo
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: auto;
+        top: 1rem;
+        z-index:1;		
+    }
+    .dr-language,
+    .navbar
+    {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media (max-width:768px)
+{
+    header
+    {
+        .navbar
+        {
+            padding-left: 0;
+        }
+        .dr-language
+        {
+            float:right;
+            margin-right:1rem;
+            padding-top:0.6rem;
+        }
+    }
+}
 
 
 

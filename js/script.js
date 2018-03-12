@@ -167,6 +167,13 @@ jQuery(document).ready(function ($) {
             e.preventDefault();
             $(this).closest('.carousel-caption').slideUp(400);
             $(this).closest('.carousel-caption').addClass('tvhide');
-        })
+        });
+    }
+    /*
+     * Is check product page
+     */
+    var $productpage = $('#productpage');
+    if ($productpage.length > 0) {
+        $('body').addClass('productpage');
     }
 });
